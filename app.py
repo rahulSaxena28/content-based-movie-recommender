@@ -97,8 +97,8 @@ def inject_css():
 # ------------------------------------------------------------------
 @st.cache_resource
 def load_data():
-    movies = pickle.load(open("movie_list.pkl", "rb"))
-    similarity = pickle.load(open("similarity.pkl", "rb"))
+    movies = pickle.load(open("model/movie_list.pkl", "rb"))
+    similarity = pickle.load(open("model/similarity.pkl", "rb"))
     return movies, similarity
 
 
